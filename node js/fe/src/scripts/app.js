@@ -207,13 +207,8 @@ $('#click-btn').off('click').on('click',(e)=>{
         })
         $('#username').val('')
         $('#password').val('')
-
         
-      }
-      
-      })
-   }
-   //用户注销
+        //用户注销
    $('#user-signout').off('click').on('click',function(){
     localStorage.removeItem('token')
     renderTpl({
@@ -221,6 +216,12 @@ $('#click-btn').off('click').on('click',(e)=>{
       isSignin:false
     })
   })
+        
+      }
+      
+      })
+   }
+  
 })
 //用户登录认证
 function verifySignin(){
